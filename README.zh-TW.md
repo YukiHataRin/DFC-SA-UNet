@@ -14,6 +14,8 @@
 ## 下載資源
 
 *   **資料集:** [點此從 Google Drive 下載](https://docs.google.com/uc?export=download&id=1E_nC-S4_Ofp-F3R_emhXp_i-4_aoAgS1)
+
+    本研究產生和/或分析的資料集可應合理要求向通訊作者索取。
 *   **訓練好的模型權重:** [點此從 Google Drive 下載](https://docs.google.com/uc?export=download&id=1your_pretrained_weights_id)
 
 ## 檔案結構

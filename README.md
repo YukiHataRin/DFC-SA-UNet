@@ -14,6 +14,8 @@ This project provides an image segmentation model based on the U-Net architectur
 ## Download Resources
 
 *   **Datasets:** [Download from Google Drive](https://docs.google.com/uc?export=download&id=1E_nC-S4_Ofp-F3R_emhXp_i-4_aoAgS1)
+
+    The datasets generated and/or analyzed during the current study are available from the corresponding author on reasonable request.
 *   **Trained Model Weights:** [Download from Google Drive](https://docs.google.com/uc?export=download&id=1your_pretrained_weights_id)
 
 ## File Structure
