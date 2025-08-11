@@ -13,8 +13,8 @@
 
 ## 下載資源
 
-*   **資料集 (CVC-ClinicDB):** [點此從 Google Drive 下載](https://docs.google.com/uc?export=download&id=1E_nC-S4_Ofp-F3R_emhXp_i-4_aoAgS1)
-*   **我訓練好的模型權重 (My Trained Model Weights):** [點此從 Google Drive 下載](https://docs.google.com/uc?export=download&id=1your_pretrained_weights_id)
+*   **資料集:** [點此從 Google Drive 下載](https://docs.google.com/uc?export=download&id=1E_nC-S4_Ofp-F3R_emhXp_i-4_aoAgS1)
+*   **訓練好的模型權重:** [點此從 Google Drive 下載](https://docs.google.com/uc?export=download&id=1your_pretrained_weights_id)
 
 ## 檔案結構
 

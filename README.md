@@ -13,8 +13,8 @@ This project provides an image segmentation model based on the U-Net architectur
 
 ## Download Resources
 
-*   **Dataset (CVC-ClinicDB):** [Download from Google Drive](https://docs.google.com/uc?export=download&id=1E_nC-S4_Ofp-F3R_emhXp_i-4_aoAgS1)
-*   **My Trained Model Weights:** [Download from Google Drive](https://docs.google.com/uc?export=download&id=1your_pretrained_weights_id)
+*   **Datasets:** [Download from Google Drive](https://docs.google.com/uc?export=download&id=1E_nC-S4_Ofp-F3R_emhXp_i-4_aoAgS1)
+*   **Trained Model Weights:** [Download from Google Drive](https://docs.google.com/uc?export=download&id=1your_pretrained_weights_id)
 
 ## File Structure
 
