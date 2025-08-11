@@ -1,0 +1,33 @@
+training:
+  num_epochs: 500
+  batch_size: 4
+  learning_rate: 0.01
+  momentum: 0.9
+  weight_decay: 0.0001
+  num_workers: 2
+  save_checkpoint_freq: 100
+  device: 'auto'
+  loss:
+    type: 'bce_dice'
+    params:
+      bce_weight: 0.5
+      dice_weight: 0.5
+
+model:
+  name: 'DFC-SA-Res-Block'
+  in_channels: 3
+  out_channels: 1
+  features: [64, 128, 256, 512]
+  pool_size: 8
+  pretrained_path: null
+
+dataset:
+  train_dir: "E:/defect-datasets/numbered-datasets/train"
+  val_dir: "E:/defect-datasets/numbered-datasets/val"
+  img_size: [224, 224]
+  augmentation: true
+
+logging:
+  log_dir: "E:/logs/log-defect/ep500_numbered_DFC-SA-Res-Block_bce-dice"
+  images_dir: "E:/logs/log-defect/ep500_numbered_DFC-SA-Res-Block_bce-dice"
+  save_best_worst_samples: 10

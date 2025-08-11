@@ -1,0 +1,33 @@
+training:
+  num_epochs: 500
+  batch_size: 4
+  learning_rate: 0.01
+  momentum: 0.9
+  weight_decay: 0.001
+  num_workers: 2
+  save_checkpoint_freq: 100
+  device: 'auto'
+  loss:
+    type: 'bce_dice'
+    params:
+      bce_weight: 0.5
+      dice_weight: 0.5
+
+model:
+  name: 'UNet_EncoderOnlyDFC'
+  in_channels: 3
+  out_channels: 1
+  features: [64, 128, 256, 512]
+  pool_size: 8
+  pretrained_path: null
+
+dataset:
+  train_dir: "E:/Datasets/CVC-ClinicDB/cvc-clinicdb/train"
+  val_dir: "E:/Datasets/CVC-ClinicDB/cvc-clinicdb/val"
+  img_size: [224, 224]
+  augmentation: true
+
+logging:
+  log_dir: "E:/Datasets/CVC-ClinicDB/cvc-clinicdb/Ablation4_EncoderOnly"
+  images_dir: "E:/Datasets/CVC-ClinicDB/cvc-clinicdb/Ablation4_EncoderOnly/images"
+  save_best_worst_samples: 10

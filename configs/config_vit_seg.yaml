@@ -1,0 +1,40 @@
+training:
+  num_epochs: 500
+  batch_size: 4
+  learning_rate: 0.01
+  momentum: 0.9
+  weight_decay: 0.0001
+  num_workers: 2
+  save_checkpoint_freq: 100
+  device: 'auto'
+  loss:
+    type: 'bce_dice'
+    params:
+      alpha: 0.7
+      beta: 0.3
+      weight_bce: 0.5
+      weight_dice: 0.5
+
+model:
+  name: 'VisionTransformerSegmentation'
+  in_channels: 3
+  out_channels: 1
+  img_dim: 224
+  patch_dim: 16
+  embed_dim: 768
+  num_layers: 12
+  num_heads: 12
+  mlp_dim: 3072
+  dropout: 0.1
+  pretrained_path: null
+
+dataset:
+  train_dir: "E:/Datasets/MappingChallenge/Mapping-Challenge/train"
+  val_dir: "E:/Datasets/MappingChallenge/Mapping-Challenge/val"
+  img_size: [224, 224]
+  augmentation: true
+
+logging:
+  log_dir: 'E:/Datasets/MappingChallenge/Mapping-Challenge/ep200_Official_VisionTransformerSeg_bce-dice'
+  images_dir: 'E:/Datasets/MappingChallenge/Mapping-Challenge/ep200_Official_VisionTransformerSeg_bce-dice/images'
+  save_best_worst_samples: 5

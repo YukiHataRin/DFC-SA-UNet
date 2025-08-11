@@ -1,0 +1,33 @@
+training:
+  num_epochs: 500
+  batch_size: 8
+  learning_rate: 0.01
+  num_workers: 2
+  save_checkpoint_freq: 25
+  momentum: 0.9
+  weight_decay: 0.0001
+  device: 'cuda'
+  loss:
+    type: 'bce_dice'
+    params:
+      alpha: 0.7
+      beta: 0.3
+      weight_bce: 1
+      weight_dice: 1
+
+model:
+  name: 'TransformerUNet'
+  in_channels: 3
+  out_channels: 1
+  pretrained_path: null
+
+dataset:
+  train_dir: "E:/Datasets/MappingChallenge/Mapping-Challenge/train"
+  val_dir: "E:/Datasets/MappingChallenge/Mapping-Challenge/val"
+  img_size: [224, 224]
+  augmentation: true
+
+logging:
+  log_dir: "E:/logs/logs_mapping_challenge/ep2000_mapping-challenge_TransformerUNet_bce_dice"
+  images_dir: "E:/logs/logs_mapping_challenge/ep2000_mapping-challenge_TransformerUNet_bce_dice/images"
+  save_best_worst_samples: 5
